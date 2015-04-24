@@ -156,3 +156,12 @@ USE_MINIKIN := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+USE_HOST_4_8=true
+GRAPHITE_OPTS=true
+STRICT_ALIASING=true
+USE_O3_OPTIMIZATIONS=true
+KRAIT_TUNINGS=true
+ENABLE_GCCONLY=true
+TARGET_USE_PIPE=true
+
