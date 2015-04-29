@@ -31,6 +31,11 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 
 TOUCH_BOOST_DEBUG := false
 
+# Define kernel config for inline building
+TARGET_KERNEL_CONFIG := hammerhead_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_GCC_VERSION_ARM := 4.9
+
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
 # Increase the size if shaders of size greater than 12KB are used.
