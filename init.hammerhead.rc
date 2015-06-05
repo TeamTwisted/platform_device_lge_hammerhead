@@ -187,14 +187,6 @@ on post-fs-data
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "conservative"
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "conservative"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "conservative"
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "conservative"
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
     chown root.system /sys/devices/system/cpu/mfreq
     chmod 220 /sys/devices/system/cpu/mfreq
     chown root.system /sys/devices/system/cpu/cpu1/online
@@ -249,14 +241,6 @@ on charger
     write /sys/devices/system/cpu/cpu1/online 1
     write /sys/devices/system/cpu/cpu2/online 1
     write /sys/devices/system/cpu/cpu3/online 1
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "powersave"
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor "powersave"
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor "powersave"
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor "powersave"
-    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu1/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu2/cpufreq/scaling_min_freq 300000
-    write /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq 300000
     write /sys/devices/system/cpu/cpu1/online 0
     write /sys/devices/system/cpu/cpu2/online 0
     write /sys/devices/system/cpu/cpu3/online 0
