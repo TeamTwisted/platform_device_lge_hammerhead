@@ -461,3 +461,8 @@ service time_daemon /system/bin/time_daemon
     class late_start
     user root
     group root
+
+service post-init /sbin/post-boot.sh
+    class core
+    user root
+    oneshot

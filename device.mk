@@ -153,6 +153,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+PRODUCT_COPY_FILES += \
+device/lge/hammerhead/post-boot.sh:root/sbin/post-boot.sh
+
 PRODUCT_PACKAGES += \
     libqomx_core \
     libmmcamera_interface \
