@@ -158,8 +158,8 @@ TARGET_TOUCHBOOST_FREQUENCY:= 1200
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 USE_DEVICE_SPECIFIC_CAMERA:= true
 
-# Flags
-COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
+# Hardware
+BOARD_HARDWARE_CLASS := device/lge/hammerhead/cmhw
 
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
 
