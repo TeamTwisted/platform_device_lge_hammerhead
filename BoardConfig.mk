@@ -33,8 +33,8 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TOUCH_BOOST_DEBUG := false
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := franco_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := twisted_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/slim
 TARGET_GCC_VERSION_ARM := 4.9
 
 # Shader cache config options
@@ -168,3 +168,21 @@ USE_MINIKIN := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+#Options for Optimizations (Some only work with Sabermod Toolchains)
+
+TARGET_ARCH=arm
+LOCAL_ARCH=arm
+USE_HOST_4_8=true
+GRAPHITE_OPTS=true
+STRICT_ALIASING=true
+USE_O3_OPTIMIZATIONS=true
+KRAIT_TUNINGS=false
+ENABLE_GCCONLY=false
+TARGET_USE_PIPE=true
+FLOOP_NEST_OPTIMIZE=false
+FFAST_MATH=false
+ENABLE_GOMP=false
+ENABLE_SANITIZE=false
+ENABLE_ARM_MODE=false
+ENABLE_PTHREAD=false
