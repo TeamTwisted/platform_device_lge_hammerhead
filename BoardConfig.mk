@@ -35,7 +35,7 @@ TOUCH_BOOST_DEBUG := false
 
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := twisted_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/slim
+TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 TARGET_GCC_VERSION_ARM := 4.9
 
 # Shader cache config options
