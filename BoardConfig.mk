@@ -36,7 +36,7 @@ TOUCH_BOOST_DEBUG := false
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := twisted_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-TARGET_GCC_VERSION_ARM := 4.9
+TARGET_GCC_VERSION_ARM := 5.1
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -178,11 +178,11 @@ USE_HOST_4_8=true
 GRAPHITE_OPTS=true
 STRICT_ALIASING=true
 USE_O3_OPTIMIZATIONS=true
-KRAIT_TUNINGS=false
-ENABLE_GCCONLY=false
+KRAIT_TUNINGS=true
+ENABLE_GCCONLY=true
 TARGET_USE_PIPE=true
-FLOOP_NEST_OPTIMIZE=false
-FFAST_MATH=false
+FLOOP_NEST_OPTIMIZE=true
+FFAST_MATH=true
 ENABLE_GOMP=false
 ENABLE_SANITIZE=false
 ENABLE_ARM_MODE=false
