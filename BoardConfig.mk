@@ -171,6 +171,7 @@ USE_MINIKIN := true
 EXTENDED_FONT_FOOTPRINT := true
 
 #Options for Optimizations (Some only work with Sabermod Toolchains)
+export USE_GCC_DEFAULTS := false
 export IS_RELEASED_BUILD := true
 export USE_HOST_4_8 := true
 export GRAPHITE_OPTS := true
