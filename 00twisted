@@ -1,0 +1,19 @@
+#!/system/bin/sh
+
+#remove the binaries as they are no longer needed. (kernel handled)
+
+mount -o remount,rw /system
+if [ -e /system/bin/mpdecision ] ; then
+	busybox mv /system/bin/mpdecision /system/bin/mpdecision_bck
+fi
+if [ -e /system/bin/thermal-engine-hh ] ; then
+	busybox mv /system/bin/thermal-engine-hh /system/bin/thermal-engine-hh_bck
+fi
+if [ -e /system/lib/hw/power.msm8974.so ] ; then
+	busybox mv /system/lib/hw/power.msm8974.so /system/lib/hw/power.msm8974.so_bck
+fi
+if [ -e /system/lib/hw/power.hammerhead.so ] ; then
+	busybox mv /system/lib/hw/power.hammerhead.so /system/lib/hw/power.hammerhead.so_bck
+fi
+mount -o remount,ro /system
+

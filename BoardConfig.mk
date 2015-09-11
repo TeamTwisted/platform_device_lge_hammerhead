@@ -16,7 +16,6 @@
 
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
-TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
@@ -34,8 +33,8 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 TOUCH_BOOST_DEBUG := false
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := twisted_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_CONFIG := twisted_hells_defconfig
+TARGET_KERNEL_SOURCE := kernel/lge/hells-Core-N5
 TARGET_GCC_VERSION_ARM := 5.2
 
 # Shader cache config options

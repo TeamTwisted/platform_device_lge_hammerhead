@@ -152,8 +152,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
+#For disabling certain kernel files
 PRODUCT_COPY_FILES += \
-device/lge/hammerhead/post-boot.sh:root/sbin/post-boot.sh
+    device/lge/hammerhead/00twisted:system/etc/init.d/00twisted \
+    device/lge/hammerhead/post-boot.sh:root/sbin/post-boot.sh
 
 PRODUCT_PACKAGES += \
     libqomx_core \
@@ -168,10 +170,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     power.msm8974
-
-# Mpdecision init.d script
-PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/01mpdecision:system/etc/init.d/01mpdecision
 
 # GPS configuration
 PRODUCT_COPY_FILES += \

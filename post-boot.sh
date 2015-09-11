@@ -1,4 +1,4 @@
-#!/system/bin/sh
+#!/sbin/sh
 
 #Fix GPS Wake Issues. From LSpeed Mod 
 mount -o remount,rw /
