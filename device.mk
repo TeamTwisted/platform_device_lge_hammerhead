@@ -304,6 +304,9 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.radio.use_cc_names=true
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.io.scheduler=bfq
+
 # If data_no_toggle is 1 then active and dormancy enable at all times.
 # If data_no_toggle is 0 there are no reports if the screen is off.
 PRODUCT_PROPERTY_OVERRIDES += \
