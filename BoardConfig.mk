@@ -162,6 +162,8 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 # Hardware
 BOARD_HARDWARE_CLASS := device/lge/hammerhead/cmhw
 
+USE_CLANG_PLATFORM_BUILD := true
+
 -include vendor/lge/hammerhead/BoardConfigVendor.mk
 
 # Enable Minikin text layout engine (will be the default soon)
