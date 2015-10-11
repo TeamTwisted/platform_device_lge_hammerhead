@@ -161,3 +161,7 @@ export TARGET_USE_PIPE := true
 export STRICT_ALIASING := true
 export GRAPHITE_OPTS := true
 export USE_O3_OPTIMIZATIONS := true
+export ENABLE_GCCONLY := true
+export FFAST_MATH := false
+export FLOOP_NEST_OPTIMIZE := false
+export KRAIT_TUNINGS := true
