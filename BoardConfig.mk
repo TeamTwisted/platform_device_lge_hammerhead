@@ -157,11 +157,10 @@ BOARD_SUPPRESS_SECURE_ERASE := true
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 
 #Options for Optimizations (Some only work with Sabermod Toolchains)
-export TARGET_USE_PIPE := true
+export CLANG_O3 := true
 export STRICT_ALIASING := true
 export GRAPHITE_OPTS := true
 export USE_O3_OPTIMIZATIONS := true
 export ENABLE_GCCONLY := true
-export FFAST_MATH := false
-export FLOOP_NEST_OPTIMIZE := false
 export KRAIT_TUNINGS := true
+export USE_O3_OPTIMIZATIONS := true
