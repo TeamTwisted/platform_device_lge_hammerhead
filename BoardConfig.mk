@@ -163,4 +163,3 @@ export GRAPHITE_OPTS := true
 export USE_O3_OPTIMIZATIONS := true
 export ENABLE_GCCONLY := true
 export KRAIT_TUNINGS := true
-export USE_O3_OPTIMIZATIONS := true
