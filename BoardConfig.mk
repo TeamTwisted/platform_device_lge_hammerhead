@@ -36,7 +36,7 @@ TOUCH_BOOST_DEBUG := false
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := hells_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hells-Core-N5
-TARGET_GCC_VERSION_ARM := 5.2
+TARGET_GCC_VERSION_ARM := 5.3
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -138,7 +138,7 @@ HAVE_ADRENO_SOURCE:= false
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 
-TARGET_TOUCHBOOST_FREQUENCY:= 1200
+#TARGET_TOUCHBOOST_FREQUENCY:= 1200
 
 USE_DEVICE_SPECIFIC_QCOM_PROPRIETARY:= true
 USE_DEVICE_SPECIFIC_CAMERA:= true
