@@ -365,10 +365,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    dalvik.vm.dex2oat-swap=false \
-    dalvik.vm.dex2oat-threads=2 \
-    dalvik.vm.image-dex2oat-threads=4 \
-    dalvik.vm.heapminfree=2m
+    dalvik.vm.dex2oat-swap=false
 
 # old-apns.conf
 PRODUCT_COPY_FILES += \
